@@ -31,6 +31,8 @@
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
     "react-hooks/exhaustive-deps": "warn",
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [
