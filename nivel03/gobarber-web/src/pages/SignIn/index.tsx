@@ -3,7 +3,7 @@ import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
-import AuthContext from '../../context/AuthContext';
+import { AuthContext } from '../../context/AuthContext';
 import getValidationErrors from '../../utils/getValidationsErrors';
 import logoImg from '../../assets/logo.svg';
 import Input from '../../components/Input';
@@ -16,9 +16,7 @@ interface InputData {
 }
 
 const SignIn: React.FC = () => {
-  const { name } = useContext(AuthContext);
-
-  console.log(name);
+  const { signIn } = useContext(AuthContext);
 
   const formRef = useRef<FormHandles>(null);
   const handleSubmit = useCallback(async (data: InputData) => {
@@ -35,6 +33,8 @@ const SignIn: React.FC = () => {
       await schema.validate(data, {
         abortEarly: false,
       });
+
+      signIn(data);
     } catch (error) {
       const errors = getValidationErrors(error);
 
