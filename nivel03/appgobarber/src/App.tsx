@@ -1,16 +1,16 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View, StatusBar, Text } from 'react-native';
 
 const App: React.FC = () => {
-  const adlfasl = 'cdac';
-
   return (
-    <View>
-      <Text>Olá mundoodsdsdo</Text>
-      <View>
-        <Text>{adlfasl}</Text>
-      </View>
-    </View>
+    <>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="#312e38"
+        translucent
+      />
+      <View style={{ backgroundColor: '#312e38', flex: 1 }} />
+    </>
   );
 };
 
