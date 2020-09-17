@@ -6,7 +6,7 @@ const App: React.FC = () => {
 
   return (
     <View>
-      <Text>Olá mundo</Text>
+      <Text>Olá mundoodsdsdo</Text>
       <View>
         <Text>{adlfasl}</Text>
       </View>
