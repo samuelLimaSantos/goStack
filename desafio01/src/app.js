@@ -19,6 +19,8 @@ function validateThatIdIsAlreadyRegistered(request, response, next) {
   if (repositoryIndex < 0) {
     return response.status(400).json({ error: "Repository not found" });
   }
+  // alter
+  
 
   request.index = repositoryIndex;
 
