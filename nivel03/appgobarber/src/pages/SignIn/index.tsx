@@ -1,14 +1,15 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Image } from 'react-native';
+import logoImg from '../../assets/logo.png';
 
 import { Container } from './styles';
 
 const SignIn: React.FC = () => {
-  return <Container>
-    <Text>
-      teste 2
-    </Text>
-  </Container>;
+  return (
+    <Container>
+      <Image source={logoImg} />
+    </Container>
+  );
 };
 
 export default SignIn;
