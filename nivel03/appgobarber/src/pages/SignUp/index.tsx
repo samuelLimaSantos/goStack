@@ -41,7 +41,7 @@ const SignUp: React.FC = () => {
 
             <Input name="password" icon="lock" placeholder="Senha" />
 
-            <Button onPress={() => console.log('Deu')}>Entrar</Button>
+            <Button onPress={() => console.log('Deeu')}>Entrar</Button>
           </Container>
         </ScrollView>
       </KeyboardAvoidingView>
