@@ -32,6 +32,7 @@
     "react-hooks/rules-of-hooks": "error",
     "no-use-before-define": "off",
     "react/jsx-props-no-spreading": "off",
+    "@typescript-eslint/ban-types": "off",
     "react-hooks/exhaustive-deps": "warn",
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [
