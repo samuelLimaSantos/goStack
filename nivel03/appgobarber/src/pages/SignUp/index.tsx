@@ -73,7 +73,7 @@ const SignUp: React.FC = () => {
                   formRef.current?.submitForm();
                 }}
               >
-                Entraa
+                Entrar
               </Button>
             </Form>
           </Container>
